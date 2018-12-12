@@ -38,7 +38,7 @@
       "cookies",
       "https://jkmatta.github.io"
     ],
-    "start_url": "jkmatta.github.io/index.html",
+    "start_url": "jkmatta.github.io/",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#FFFFFF"
