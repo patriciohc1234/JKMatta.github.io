@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GestiónCompras</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/lista.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- WEB PROGRESSIVE -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Dachser">
+  <link rel="apple-touch-icon" href="img/logo152.png">
+  <meta name="msapplication-TileImage" content="img/logo144.png">
+  <meta name="msapplication-TileColor" content="#252525">
+</head> 
+<body>
+    <nav class="navbar navbar-default">
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">DACHSER</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="menu.html">Inicio</a></li>
+          <li><a href="lista.html">Listas</a></li>
+          <li class="active"><a href="viewtienda.html">Tiendas</a></li>
+        </ul>
+      </div>
+
+    </nav>
+      
+    <div class="container">
+
+      <div class="saludos">
+        <h3>Tiendas Disponibles</h3>
+        <p>Aquí podras visualizar las tiendas autorizadas para la compra.</p>
+      </div>
+
+      <div class="container-lists" id="fisica">
+        <h3><b>Tienda Física</b></h3>
+
+      </div>
+
+      <div class="container-lists" id="online">
+        <h3><b>Tienda OnLine</b></h3>
+
+      </div>
+
+    </div>
+    <script src="js/tienda-fisica.js"></script>
+    <script src="js/tienda-online.js"></script>
+</body>
+</html>

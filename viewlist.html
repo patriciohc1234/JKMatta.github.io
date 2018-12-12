@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GestiónCompras</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/viewlist.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+        <!-- WEB PROGRESSIVE -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Dachser">
+  <link rel="apple-touch-icon" href="img/logo152.png">
+  <meta name="msapplication-TileImage" content="img/logo144.png">
+  <meta name="msapplication-TileColor" content="#252525">
+</head> 
+<body>
+    <nav class="navbar navbar-default">
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">DACHSER</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="menu.html">Inicio</a></li>
+          <li class="active"><a href="lista.html">Listas</a></li>
+          <li><a href="viewtienda.html">Tiendas</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+      <div class="container-fluid">
+        <div class="row content" >
+          <div class="col-sm-3 sidenav well" id="row-produc">
+            <h2>Nuevo Producto</h2>
+
+            <div class="input Nombre">
+              <p>Nombre:</p>
+              <input type="text" id="nombre">
+            </div>
+
+            <div class="input Presupuesto">
+              <p>Presupuesto:</p>
+              <input type="text" id="presupuesto">
+            </div>
+            
+            <div class="input Costo">
+              <p>Valor:</p>
+              <input type="text" id="valor">
+            </div>
+
+            <div class="input Tienda">
+              <p>Tienda:</p>
+              <select id="tienda">
+                <option value="SpDigital">SpDigital</option>
+                <option value="G2A">G2A</option>
+                <option value="PcFactory">PcFactory</option>
+              </select>
+            </div>
+
+            <div class="input Observacion">
+              <p>Nota Adicional:</p>
+              <input type="text" id="nota">
+            </div>
+
+            <button class="btn-agregar" id="btnAdd">AGREGAR</button>
+          </div>
+
+          <br>
+          
+          <div class="col-sm-9">
+            <div class="well" id="info-list">
+              <h4>Detalles Lista</h4>
+
+              <div class="nom-list">
+                <p><b>Nombre: </b></p>
+                <p id="nameList"></p>
+              </div>
+
+              <div class="t_productos">
+                <p><b>Total Productos: </b></p>
+                <p id="cantList"></p>
+              </div>
+
+              <div class="t_comprados">
+                <p><b>Total Comprados: </b></p>
+                <p>0</p>
+              </div>
+
+              <div class="t_presupuesto">
+                <p><b>Total Presupuesto: $</b></p>
+                <p id="presu"></p>
+              </div>
+
+              <div class="t_costo">
+                <p><b>Total Costo: $</b></p>
+                <p id="cost"></p>
+              </div>
+
+            </div>  
+
+            <div id="GraficoGoogleChart-ejemplo-1" class="GraficaGoogle">
+            </div>
+
+            <div class="well">
+                
+                <div class="table-responsive">          
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>NOMBRE</th>
+                        <th>PRESUPUESTO</th>
+                        <th>COSTO</th>
+                        <th>TIENDA</th>
+                        <th>NOTA ADICIONAL</th>
+                        <th>ESTADO</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                  </table>
+                </div>
+
+            </div> 
+        </div>
+      </div>
+
+<script src="js/grafica.js"></script>
+<script src="js/addProductos.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+	background-image: url("http://travel.manaprocloud.com/wp-content/uploads/2016/09/image5_1-1.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+	margin-top: 5%;
+}
+
+.saludos{
+	padding: 10px;
+	border: solid 2px white;
+	border-radius: 10px;
+	background-color: lightgray;
+}
+
+.saludos p{
+	font-family: monospace;
+	font-size: 20px;
+}
+
+.listas{
+	margin-top: 10%;
+	padding: 10px;
+	border: solid 2px white;
+	border-radius: 10px;
+	background-color: lightgray;
+}
+
+.listas p{
+	font-family: monospace;
+	font-size: 20px;
+}
+
+#btn-salir{
+	position: relative;
+	left: 90%;
+}
+
+@media (max-width: 800px){
+	#btn-salir{
+		left: 70%;
+	}
+}

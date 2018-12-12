@@ -1,0 +1,67 @@
+#row-produc{
+	margin-top: 1.2%;
+}
+
+#row-produc h2{
+	font-family: monospace;
+}
+
+#info-list{
+	font-family: monospace;
+}
+
+.nom-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.t_productos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.t_comprados{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.t_presupuesto{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.t_costo{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.input{
+	margin-top: 8%;
+}
+
+.btn-agregar{
+	margin-top: 10%;
+}
+
+.oddRow{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.span-estate {
+	color: darkgreen;
+}
+
+.span-estate-1 {
+	color: darkred;
+}
+
+.well{
+	margin-top: 2%;
+}
+
+.GraficaGoogle{
+	width: 100%;
+}
+
+

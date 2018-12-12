@@ -1,0 +1,45 @@
+{
+    "name": "Dachser",
+    "version": "1.0",
+    "description": "Web de gestión de bodega.",
+    "manifest_version": 1,
+    "author": "Javier",
+    "icons": [{
+      "src": "img/logo128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "img/logo144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "img/logo152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      }, {
+        "src": "img/logo256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }, {
+        "src": "img/logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }],
+    "browser_action": {
+        "default_title": "Dachser",
+        "default_popup": "index.html"
+    },
+    "permissions":[
+      "notifications",
+      "storage",
+      "tabs",
+      "http://*/*",
+      "https://*/*",
+      "cookies",
+      "https://jkmatta.github.io/Examen.github.io/"
+    ],
+    "start_url": "/Examen.github.io/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF"
+  }
