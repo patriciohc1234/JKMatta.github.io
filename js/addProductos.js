@@ -15,6 +15,7 @@ btnAdd.addEventListener("click", function( mouse ){
 	AddProducts();
 });
 
+
 let nameList = JSON.parse( localStorage.getItem( "viewList" ) );
 console.log("Lista Traida: "+nameList);
 var listName = "Productos"+nameList;
